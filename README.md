@@ -73,6 +73,12 @@ curl -X POST "http://localhost:8000/auth/login" \
      -d "username=admin@example.com&password=admin"
 ```
 
+o si no te funciona haz esta:
+
+```bash
+curl -X POST "http://localhost:8000/auth/login" -H "Content-Type: application/x-www-form-urlencoded" -d "username=admin@example.com&password=admin"
+```
+
 Respuesta:
 ```json
 {
