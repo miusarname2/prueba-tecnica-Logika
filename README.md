@@ -27,8 +27,8 @@ Una API REST funcional, segura y mantenible para gestión de tareas, construida 
 
 1. Clona el repositorio:
    ```bash
-   git clone <repository-url>
-   cd task-management-api
+   git clone https://github.com/miusarname2/prueba-tecnica-Logika.git
+   cd prueba-tecnica-Logika
    ```
 
 2. Instala las dependencias:
@@ -86,6 +86,10 @@ Usa el token en las cabeceras de las solicitudes:
 Authorization: Bearer <access_token>
 ```
 
+## Documentación de la API
+
+Accede a `http://localhost:8000/docs` para la documentación interactiva generada por FastAPI.
+
 ### Endpoints
 
 #### Tareas
@@ -128,14 +132,9 @@ Estos índices mejoran el rendimiento en consultas comunes sin sobrecargar la ba
 - **Expiración de token**: Configurable vía `JWT_EXPIRE_MINUTES` (default 30 minutos).
 - **Manejo de errores**: Respuestas JSON con códigos HTTP estándar.
 
-## Documentación de la API
-
-Accede a `http://localhost:8000/docs` para la documentación interactiva generada por FastAPI.
 
 ## Desarrollo
 
-- Ejecuta tests: (si se implementan)
-- Linting: (configurar herramientas como black, flake8)
 - Migraciones: Usa `alembic revision --autogenerate -m "message"` para nuevas migraciones.
 
 ## Producción
@@ -144,7 +143,3 @@ Accede a `http://localhost:8000/docs` para la documentación interactiva generad
 - Usa un servidor ASGI como Gunicorn + Uvicorn.
 - Implementa logging y monitoreo.
 - Considera usar un proxy reverso como Nginx.
-
-## Licencia
-
-[Especifica la licencia si aplica]
